@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "eslint/max-depth": ["error", 3],
+    "eslint/complexity": ["error", 10],
+    "eslint/curly": ["error", "all"],
+    "eslint/no-nested-ternary": "error",
+    "eslint/prefer-const": "error",
+    "eslint/no-else-return": "error",
+    "eslint/no-warning-comments": "error",
+    "eslint/no-inline-comments": "error"
+  },
+  "ignorePatterns": ["dist", "node_modules", "public/data"]
+}
